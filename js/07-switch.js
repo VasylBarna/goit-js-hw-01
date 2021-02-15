@@ -20,25 +20,25 @@ console.log(category);
 //               console.log("5")
 // }  else {console.log("Невернний ввод")
 // }
-const stars = 4;
-let result;
-switch (stars) {
-              case 1:
-                            result = "case 1";
-                            break;
-                case 2:
-                            result = "case 2";
-                            break;
-                case 3:
-                            result = "case 3";
-                            break;
-                case 4:
-                            result = "case 4";
-                            break;
-                case 5:
-                            result = "case 5";
-                            break;
-              default:
-                            result = "Невернний ввод";
-}
-console.log(result);
+// const stars = 4;
+// let result;
+// switch (stars) {
+//               case 1:
+//                             result = "case 1";
+//                             break;
+//                 case 2:
+//                             result = "case 2";
+//                             break;
+//                 case 3:
+//                             result = "case 3";
+//                             break;
+//                 case 4:
+//                             result = "case 4";
+//                             break;
+//                 case 5:
+//                             result = "case 5";
+//                             break;
+//               default:
+//                             result = "Невернний ввод";
+// }
+// console.log(result);

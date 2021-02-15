@@ -15,14 +15,26 @@
 // const buttonRef = document.querySelector('button');
 // buttonRef.addEventListener('click', () => { console.log('CLICK!'); });
 
-const numberInputRef = document.querySelector('input[name="number"]');
-const powerInputRef = document.querySelector('input[name="power"]');
-const buttonRef = document.querySelector('button');
-buttonRef.addEventListener('click', function() {
-              console.log('numberInputRef.value: ', numberInputRef.value);
-              console.log('powerInputRef.value: ', powerInputRef.value);
-              const number = Number(numberInputRef.value);
-              const power = Number(powerInputRef.value);
-              const result = Math.pow(number, power);
-console.log(result);
-});
+
+// const numberInputRef = document.querySelector('input[name="number"]');
+// const powerInputRef = document.querySelector('input[name="power"]');
+// const buttonRef = document.querySelector('button');
+// buttonRef.addEventListener('click', function() {
+//               console.log('numberInputRef.value: ', numberInputRef.value);
+//               console.log('powerInputRef.value: ', powerInputRef.value);
+//               const number = Number(numberInputRef.value);
+//               const power = Number(powerInputRef.value);
+//               const result = Math.pow(number, power);
+// console.log(result);
+// });
+
+
+function checkStorage(available, ordered) {
+              let message;
+              // Пиши код ниже этой строки
+    if (available > ordered) { message = "Заказ оформлен, с вами свяжется менеджер"}
+  else if (available < ordered) { message = "На складе недостаточно товаров!"}
+  // Пиши код выше этой строки
+  return message;
+}
+
