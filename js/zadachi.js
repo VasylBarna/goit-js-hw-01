@@ -99,19 +99,135 @@
 //     return commonElements;
 //   }
 
-// Задача 8 / 44 Модуль: 6
-function changeEven(numbers, value) {
-  // Пиши код ниже этой строки
-  const newEven = [];
-  numbers.forEach((element) => {
-    if (element % 2 === 0) {
-      newEven.push((numbers = element + value));
-    }
-  });
-  return newEven;
-  // Пиши код выше этой строки
-}
-console.log(changeEven([1, 2, 3, 4, 5], 10));
-console.log(changeEven([2, 8, 3, 7, 4, 6], 10));
-console.log(changeEven([17, 24, 68, 31, 42], 100));
-console.log(changeEven([44, 13, 81, 92, 36, 54], 100));
+// Задача 9 / 44 Модуль: 6
+
+// function changeEven(numbers, value) {
+//   // Пиши код ниже этой строки
+//   const newEven = [];
+//   numbers.forEach((element) => {
+//     if (element % 2 === 0) {
+//       newEven.push(element + value);
+//     } else {
+//       newEven.push(element);
+//     }
+//   });
+//   return newEven;
+//   // Пиши код выше этой строки
+// }
+// console.log(changeEven([1, 2, 3, 4, 5], 10));
+// console.log(changeEven([2, 8, 3, 7, 4, 6], 10));
+// console.log(changeEven([17, 24, 68, 31, 42], 100));
+// console.log(changeEven([44, 13, 81, 92, 36, 54], 100));
+
+// Задача 10 / 44 Модуль: 6
+
+// const planets = ["Земля", "Марс", "Венера", "Юпитер"];
+// // Пиши код ниже этой строки
+// const planetsLengths = planets.map((planet) => planet.length);
+
+// Задача 11 / 44 Модуль: 6
+// const books = [
+//   { title: "Последнее королевство", author: "Бернард Корнуэлл", rating: 8.38 },
+//   { title: "На берегу спокойных вод", author: "Роберт Шекли", rating: 8.51 },
+//   { title: "Сон смешного человека", author: "Федор Достоевский", rating: 7.75 },
+//   { title: "Красна как кровь", author: "Ли Танит", rating: 7.94 },
+//   { title: "Враг Божий", author: "Бернард Корнуэлл", rating: 8.67 },
+// ];
+// // Пиши код ниже этой строки
+
+// const titles = books.map((book) => book.title);
+
+// Задача 12 / 44 Модуль: 6
+// const books = [
+//   {
+//     title: "Последнее королевство",
+//     author: "Бернард Корнуэлл",
+//     genres: ["приключения", "историческое"],
+//   },
+//   {
+//     title: "На берегу спокойных вод",
+//     author: "Роберт Шекли",
+//     genres: ["фантастика"],
+//   },
+//   {
+//     title: "Красна как кровь",
+//     author: "Ли Танит",
+//     genres: ["ужасы", "мистика"],
+//   },
+// ];
+// // Пиши код ниже этой строки
+
+// const genres = books.flatMap((book) => book.genres);
+
+// Задача 13 / 44 Модуль: 6
+// const getUserNames = (users) => users.map((user) => user.name);
+
+// Задача 14 / 44 Модуль:
+// Пиши код ниже этой строки
+// const getUserEmails = users => users.map((user) => user.email);
+// Пиши код выше этой строки
+
+// Задача 15 / 44 Модуль:
+// const numbers = [17, 24, 82, 61, 36, 18, 47, 52, 73];
+// // Пиши код ниже этой строки
+
+// const evenNumbers = numbers.filter((num) => num % 2 === 0);
+// const oddNumbers = numbers.filter((num) => num % 2 === 1);
+
+// / Задача 16 / 44 Модуль:
+// const books = [
+//   {
+//     title: "Последнее королевство",
+//     author: "Бернард Корнуэлл",
+//     genres: ["приключения", "историческое"],
+//   },
+//   {
+//     title: "На берегу спокойных вод",
+//     author: "Роберт Шекли",
+//     genres: ["фантастика", "мистика"],
+//   },
+//   {
+//     title: "Красна как кровь",
+//     author: "Ли Танит",
+//     genres: ["ужасы", "мистика", "приключения"],
+//   },
+// ];
+// // Пиши код ниже этой строки
+// const allGenres = books.flatMap((book) => book.genres);
+// const uniqueGenres = allGenres.filter(
+//   (genre, index, array) => array.indexOf(genre) === index
+// );
+
+// / Задача 17 / 44 Модуль:
+// const books = [
+//   { title: 'Последнее королевство', author: 'Бернард Корнуэлл', rating: 8.38 },
+//   { title: 'На берегу спокойных вод', author: 'Роберт Шекли', rating: 8.51 },
+//   { title: 'Сон смешного человека', author: 'Федор Достоевский', rating: 7.75 },
+//   { title: 'Красна как кровь', author: 'Ли Танит', rating: 7.94 },
+//   { title: 'Враг Божий', author: 'Бернард Корнуэлл', rating: 8.67 }
+// ];
+
+// const MIN_RATING = 8;
+// const AUTHOR = 'Бернард Корнуэлл';
+// // Пиши код ниже этой строки
+
+// const topRatedBooks = books.filter((book) => book.rating >= MIN_RATING);
+// const booksByAuthor = books.filter((book) => book.author === AUTHOR);
+
+// / Задача 18 / 44 Модуль:
+// // Пиши код ниже этой строки
+// const getUsersWithEyeColor = (users, color) => {
+//  return users.filter((user) => user.eyeColor === color)
+
+// };
+// // Пиши код выше этой строки
+
+// / Задача 19 / 44 Модуль:
+// Пиши код ниже этой строки
+// const getUsersWithAge = (users, minAge, maxAge) => {
+//  return users.filter((user) => user.age >= minAge && user.age <= maxAge)
+
+// };
+// // Пиши код выше этой строки
+
+
