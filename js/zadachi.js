@@ -319,3 +319,242 @@
 //   return uniqeFriends;
 // };
 // / Задача 22 / 44 Модуль:
+// Пиши код ниже этой строки
+// const getActiveUsers = (users) => {
+//     const onlineFriends = users.filter((user) => user.isActive);
+
+// return onlineFriends;
+// };
+// Пиши код выше этой строки
+
+// / Задача 23 / 44 Модуль:
+// Пиши код ниже этой строки
+// const getInactiveUsers = (users) => {
+//     const offlineFriends = users.filter((user) => user.isActive === false);
+
+// return offlineFriends;
+// };
+// Пиши код выше этой строки
+
+// / Задача 24/ 44 Модуль:
+// const books = [
+//   { title: "Последнее королевство", author: "Бернард Корнуэлл", rating: 8.38 },
+//   { title: "На берегу спокойных вод", author: "Роберт Шекли", rating: 8.51 },
+//   { title: "Сон смешного человека", author: "Федор Достоевский", rating: 7.75 },
+//   { title: "Красна как кровь", author: "Ли Танит", rating: 7.94 },
+// ];
+// const BOOK_TITLE = "Сон смешного человека";
+// const AUTHOR = "Роберт Шекли";
+// // Пиши код ниже этой строки
+
+// const bookWithTitle = books.find((book) => book.title === BOOK_TITLE);
+// const bookByAuthor = books.find((book) => book.author === AUTHOR);
+
+// / Задача 25/ 44 Модуль:
+// Пиши код ниже этой строки
+// const getUserWithEmail = (users, email) => {
+// const result = users.find((user) => user.email === email);
+//   return result;
+// };
+// Пиши код выше этой строки
+
+// / Задача 26/ 44 Модуль:
+// const firstArray = [26, 94, 36, 18];
+// const secondArray = [17, 61, 23];
+// const thirdArray = [17, 26, 94, 61, 36, 23, 18];
+// // Пиши код ниже этой строки
+
+// const eachElementInFirstIsEven = firstArray.every((item) => item % 2 === 0);
+// const eachElementInFirstIsOdd = firstArray.every((item) => item % 2 === 1);
+
+// const eachElementInSecondIsEven = secondArray.every((item) => item % 2 === 0);
+// const eachElementInSecondIsOdd = secondArray.every((item) => item % 2 === 1);
+
+// const eachElementInThirdIsEven = thirdArray.every((item) => item % 2 === 0);
+// const eachElementInThirdIsOdd = thirdArray.every((item) => item % 2 === 1);
+
+// / Задача 27/ 44 Модуль:
+// Пиши код ниже этой строки
+// const isEveryUserActive = (users) => {
+//    return users.every((user) => user.isActive);
+// };
+// Пиши код выше этой строки
+
+// / Задача 28/ 44 Модуль:
+// const firstArray = [26, 94, 36, 18];
+// const secondArray = [17, 61, 23];
+// const thirdArray = [17, 26, 94, 61, 36, 23, 18];
+// // Пиши код ниже этой строки
+
+// const anyElementInFirstIsEven = firstArray.some((item) => item % 2 === 0);
+// const anyElementInFirstIsOdd = firstArray.some((item) => item % 2 === 1);
+
+// const anyElementInSecondIsEven = secondArray.some((item) => item % 2 === 0);
+// const anyElementInSecondIsOdd = secondArray.some((item) => item % 2 === 1);
+
+// const anyElementInThirdIsEven = thirdArray.some((item) => item % 2 === 0);
+// const anyElementInThirdIsOdd = thirdArray.some((item) => item % 2 === 1);
+
+// / Задача 29/ 44 Модуль:
+// Пиши код ниже этой строки
+// const isAnyUserActive = users => {
+//    return users.some((user) => user.isActive);
+// };
+// Пиши код выше этой строки
+
+// / Задача 30/ 44 Модуль:
+// const players = {
+//   mango: 1270,
+//   poly: 468,
+//   ajax: 710,
+//   kiwi: 244,
+// };
+// const playtimes = Object.values(players); // [1270, 468, 710, 244]
+// // Пиши код ниже этой строки
+
+// const totalPlayTime = playtimes.reduce((acc, values) => {
+//   return acc + values;
+// }, 0);
+
+// // Пиши код выше этой строки
+// const averagePlayTime = totalPlayTime / playtimes.length;
+
+// / Задача 31/ 44 Модуль:
+// const players = [
+//   { name: "Манго", playtime: 1270, gamesPlayed: 4 },
+//   { name: "Поли", playtime: 469, gamesPlayed: 2 },
+//   { name: "Аякс", playtime: 690, gamesPlayed: 3 },
+//   { name: "Киви", playtime: 241, gamesPlayed: 1 },
+// ];
+// // Пиши код ниже этой строки
+
+// const totalAveragePlaytimePerGame = players.reduce((total, player) => {
+//   return total + player.playtime / player.gamesPlayed;
+// }, 0);
+
+// / Задача 32/ 44 Модуль:
+// const calculateTotalBalance = users =>
+//  users.reduce((total, user) => total + user.balance, 0);
+// Пиши код выше этой строки
+
+// / Задача 33/ 44 Модуль:
+// Пиши код ниже этой строки
+// const getTotalFriendCount = users =>
+// users.reduce((allFriends, user) => allFriends + user.friends.length, 0);
+// // Пиши код выше этой строки
+
+// / Задача 34/ 44 Модуль:
+// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+// const authors = [
+//   "Ли Танит",
+//   "Бернард Корнуэлл",
+//   "Роберт Шекли",
+//   "Федор Достоевский",
+// ];
+// // Пиши код ниже этой строки
+// const ascendingReleaseDates = [...releaseDates].sort();
+// const alphabeticalAuthors = [...authors].sort();
+
+// / Задача 35/ 44 Модуль:
+// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+// // Пиши код ниже этой строки
+// const ascendingReleaseDates = [...releaseDates].sort((a, b) => a - b);
+// const descendingReleaseDates = [...releaseDates].sort((a, b) => b - a);
+
+// / Задача 36/ 44 Модуль:
+// const authors = [
+//   "Ли Танит",
+//   "Бернард Корнуэлл",
+//   "Роберт Шекли",
+//   "Федор Достоевский",
+//   "Говард Лавкрафт",
+// ];
+// // Пиши код ниже этой строки
+// const authorsInAlphabetOrder = [...authors].sort((a, b) => a.localeCompare(b));
+// const authorsInReversedOrder = [...authors].sort((a, b) => b.localeCompare(a));
+
+// / Задача 37/ 44 Модуль:
+// const books = [
+//   { title: "Последнее королевство", author: "Бернард Корнуэлл", rating: 8.38 },
+//   { title: "На берегу спокойных вод", author: "Роберт Шекли", rating: 8.51 },
+//   { title: "Сон смешного человека", author: "Федор Достоевский", rating: 7.75 },
+//   { title: "Красна как кровь", author: "Ли Танит", rating: 7.94 },
+//   { title: "Враг Божий", author: "Бернард Корнуэлл", rating: 8.67 },
+// ];
+// // Пиши код ниже этой строки
+// const sortedByAuthorName = [...books].sort((firstAuthor, secondAuthor) =>
+//   firstAuthor.author.localeCompare(secondAuthor.author)
+// );
+// const sortedByReversedAuthorName = [
+//   ...books,
+// ].sort((firstAuthor, secondAuthor) =>
+//   secondAuthor.author.localeCompare(firstAuthor.author)
+// );
+// const sortedByAscendingRating = [...books].sort(
+//   (firstRating, secondRating) => firstRating.rating - secondRating.rating
+// );
+// const sortedByDescentingRating = [...books].sort(
+//   (firstRating, secondRating) => secondRating.rating - firstRating.rating
+// );
+
+// / Задача 38/ 44 Модуль:
+// Пиши код ниже этой строки
+// const sortByAscendingBalance = users => { return users.sort((firstBalance, secondBalance) =>
+// firstBalance.balance - secondBalance.balance);};
+// Пиши код выше этой строки
+
+//  Задача 39/ 44 Модуль:
+// Пиши код ниже этой строки
+// const sortByDescendingFriendCount = users =>
+//  [...users].sort((firstFriend, secondFriend) =>
+// secondFriend.friends.length - firstFriend.friends.length);
+// // Пиши код выше этой строки
+
+// Задача 40/ 44 Модуль:
+// Пиши код ниже этой строки
+// const sortByName = users => [...users].sort((firstName, secondName) =>
+// firstName.name.localeCompare(secondName.name));
+// Пиши код выше этой строки
+
+// Задача 41/ 44 Модуль:
+// const books = [
+//   { title: "Последнее королевство", author: "Бернард Корнуэлл", rating: 8.38 },
+//   { title: "На берегу спокойных вод", author: "Роберт Шекли", rating: 8.51 },
+//   { title: "Сон смешного человека", author: "Федор Достоевский", rating: 7.75 },
+//   { title: "Красна как кровь", author: "Ли Танит", rating: 8.14 },
+//   { title: "Сны В Ведьмином Доме", author: "Говард Лавкрафт", rating: 8.67 },
+// ];
+// const MIN_BOOK_RATING = 8;
+// // Пиши код ниже этой строки
+// const names = [...books]
+//   .filter((book) => book.rating > MIN_BOOK_RATING)
+//   .map((book) => book.author)
+//   .sort();
+
+// Задача 42/ 44 Модуль:
+// Пиши код ниже этой строки
+// const getNamesSortedByFriendCount = (users) => {
+//   return [...users]
+//     .sort((a, b) => a.friends.length - b.friends.length)
+//     .filter((user) => user.name)
+//     .map((user) => user.name);
+// };
+// // Пиши код выше этой строки
+
+// Задача 43/ 44 Модуль:
+// Пиши код ниже этой строки
+// const getSortedFriends = (users) => {
+//   return [...users]
+//     .flatMap((user) => user.friends)
+//     .filter((friends, index, users) => users.indexOf(friends) === index)
+//     .sort((a, b) => a.localeCompare(b));
+// };
+// Пиши код выше этой строки
+
+// Задача 44/ 44 Модуль:
+// Пиши код ниже этой строки
+// const getTotalBalanceByGender = (users, gender) => 
+//    [...users].filter((user) => user.gender === gender)
+//    .reduce((total, user) => total + user.balance, 0)
+
+// // Пиши код выше этой строки
